@@ -1,0 +1,44 @@
+[
+{
+  "directory": "/home/user20/workspace_semicon/avr/atmega128a/build",
+  "command": "/home/user20/tools/avr8/bin/avr-gcc -DF_CPU=16000000UL -I/home/user20/workspace_semicon/avr/atmega128a/src -I/home/user20/workspace_semicon/avr/atmega128a/src/ap -I/home/user20/workspace_semicon/avr/atmega128a/src/hw -I/home/user20/workspace_semicon/avr/atmega128a/src/common -mmcu=atmega128a -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/main.c.obj -c /home/user20/workspace_semicon/avr/atmega128a/main.c",
+  "file": "/home/user20/workspace_semicon/avr/atmega128a/main.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/main.c.obj"
+},
+{
+  "directory": "/home/user20/workspace_semicon/avr/atmega128a/build",
+  "command": "/home/user20/tools/avr8/bin/avr-gcc -DF_CPU=16000000UL -I/home/user20/workspace_semicon/avr/atmega128a/src -I/home/user20/workspace_semicon/avr/atmega128a/src/ap -I/home/user20/workspace_semicon/avr/atmega128a/src/hw -I/home/user20/workspace_semicon/avr/atmega128a/src/common -mmcu=atmega128a -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/ap/ap.c.obj -c /home/user20/workspace_semicon/avr/atmega128a/src/ap/ap.c",
+  "file": "/home/user20/workspace_semicon/avr/atmega128a/src/ap/ap.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/ap/ap.c.obj"
+},
+{
+  "directory": "/home/user20/workspace_semicon/avr/atmega128a/build",
+  "command": "/home/user20/tools/avr8/bin/avr-gcc -DF_CPU=16000000UL -I/home/user20/workspace_semicon/avr/atmega128a/src -I/home/user20/workspace_semicon/avr/atmega128a/src/ap -I/home/user20/workspace_semicon/avr/atmega128a/src/hw -I/home/user20/workspace_semicon/avr/atmega128a/src/common -mmcu=atmega128a -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/button.c.obj -c /home/user20/workspace_semicon/avr/atmega128a/src/driver/button.c",
+  "file": "/home/user20/workspace_semicon/avr/atmega128a/src/driver/button.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/driver/button.c.obj"
+},
+{
+  "directory": "/home/user20/workspace_semicon/avr/atmega128a/build",
+  "command": "/home/user20/tools/avr8/bin/avr-gcc -DF_CPU=16000000UL -I/home/user20/workspace_semicon/avr/atmega128a/src -I/home/user20/workspace_semicon/avr/atmega128a/src/ap -I/home/user20/workspace_semicon/avr/atmega128a/src/hw -I/home/user20/workspace_semicon/avr/atmega128a/src/common -mmcu=atmega128a -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/lcd.c.obj -c /home/user20/workspace_semicon/avr/atmega128a/src/driver/lcd.c",
+  "file": "/home/user20/workspace_semicon/avr/atmega128a/src/driver/lcd.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/driver/lcd.c.obj"
+},
+{
+  "directory": "/home/user20/workspace_semicon/avr/atmega128a/build",
+  "command": "/home/user20/tools/avr8/bin/avr-gcc -DF_CPU=16000000UL -I/home/user20/workspace_semicon/avr/atmega128a/src -I/home/user20/workspace_semicon/avr/atmega128a/src/ap -I/home/user20/workspace_semicon/avr/atmega128a/src/hw -I/home/user20/workspace_semicon/avr/atmega128a/src/common -mmcu=atmega128a -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/led.c.obj -c /home/user20/workspace_semicon/avr/atmega128a/src/driver/led.c",
+  "file": "/home/user20/workspace_semicon/avr/atmega128a/src/driver/led.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/driver/led.c.obj"
+},
+{
+  "directory": "/home/user20/workspace_semicon/avr/atmega128a/build",
+  "command": "/home/user20/tools/avr8/bin/avr-gcc -DF_CPU=16000000UL -I/home/user20/workspace_semicon/avr/atmega128a/src -I/home/user20/workspace_semicon/avr/atmega128a/src/ap -I/home/user20/workspace_semicon/avr/atmega128a/src/hw -I/home/user20/workspace_semicon/avr/atmega128a/src/common -mmcu=atmega128a -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/uart0.c.obj -c /home/user20/workspace_semicon/avr/atmega128a/src/driver/uart0.c",
+  "file": "/home/user20/workspace_semicon/avr/atmega128a/src/driver/uart0.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/driver/uart0.c.obj"
+},
+{
+  "directory": "/home/user20/workspace_semicon/avr/atmega128a/build",
+  "command": "/home/user20/tools/avr8/bin/avr-gcc -DF_CPU=16000000UL -I/home/user20/workspace_semicon/avr/atmega128a/src -I/home/user20/workspace_semicon/avr/atmega128a/src/ap -I/home/user20/workspace_semicon/avr/atmega128a/src/hw -I/home/user20/workspace_semicon/avr/atmega128a/src/common -mmcu=atmega128a -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/uart0_int.c.obj -c /home/user20/workspace_semicon/avr/atmega128a/src/driver/uart0_int.c",
+  "file": "/home/user20/workspace_semicon/avr/atmega128a/src/driver/uart0_int.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/driver/uart0_int.c.obj"
+}
+]

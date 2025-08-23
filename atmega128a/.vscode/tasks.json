@@ -1,0 +1,73 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            // CMake를 사용하여 빌드를 수행하는 작업
+            "label": "CMake Build",
+            "type": "process", // 외부 프로세스를 호출하여 작업을 수행
+            "command": "cmake", // CMake 명령어 실행
+            "args": [
+                "--build", // CMake를 빌드 모드로 실행
+                "${workspaceFolder}/build", // 작업 공간 폴더 안의 'build' 디렉토리를 대상으로 빌드
+                "--target", // 특정 빌드 타겟을 지정
+                "all" // 모든 타겟을 빌드
+            ],
+            "group": {
+                "kind": "build", // 빌드 작업으로 분류
+                "isDefault": true // 기본 빌드 작업으로 설정
+            },
+            "problemMatcher": [] // 문제 매처를 지정하지 않음
+        },
+        {
+            // CMake를 사용하여 클린(clean)을 수행하는 작업
+            "label": "CMake Clean",
+            "type": "process", // 외부 프로세스를 호출하여 작업을 수행
+            "command": "cmake", // CMake 명령어 실행
+            "args": [
+                "--build", // CMake를 빌드 모드로 실행
+                "${workspaceFolder}/build", // 작업 공간 폴더 안의 'build' 디렉토리를 대상으로 실행
+                "--target", // 특정 빌드 타겟을 지정
+                "clean" // 'clean' 타겟을 수행하여 빌드 파일 제거
+            ],
+            "problemMatcher": [] // 문제 매처를 지정하지 않음
+        },
+        {
+            // avrdude를 사용하여 ATmega128A에 펌웨어를 업로드하는 작업
+            "label": "avrdude",
+            "type": "shell", // 쉘 명령어 실행
+            "command": "/usr/bin/avrdude", // avrdude 명령어 실행
+            "args": [
+                "-C", "/etc/avrdude.conf", // avrdude 설정 파일 경로
+                "-v", // 상세한 출력 활성화
+                "-u", // 잠금 비트를 설정하지 않음 (쓰기 보호 해제)
+                "-p", "atmega128a", // 타겟 MCU를 ATmega128A로 설정
+                "-c", "avrisp2", // 프로그래머 타입을 AVR ISP mkII로 설정
+                "-P", "/dev/ttyUSB0", // 프로그래머가 연결된 시리얼 포트 경로 지정
+                "-b", "115200", // 통신 속도 설정
+                "-U", "flash:w:build/atmega128a.hex:i" // 플래시에 HEX 파일을 작성(write), 파일 경로 및 형식 지정
+            ],
+            "problemMatcher": [] // 문제 매처를 지정하지 않음
+        },
+        {
+            // 빌드 전체 프로세스를 순차적으로 실행하는 작업
+            "label": "Build",
+            "dependsOrder": "sequence", // 순차적으로 작업을 실행
+            "dependsOn": [
+                "CMake Build", // 먼저 CMake 빌드를 수행
+                "avrdude" // 이후 avrdude를 통해 펌웨어 업로드 수행
+            ],
+            "group": {
+                "kind": "build", // 빌드 작업으로 분류
+                "isDefault": true // 기본 빌드 작업으로 설정
+            }
+        },
+        {
+            // 클린 작업을 순차적으로 실행하는 작업
+            "label": "Clean",
+            "dependsOrder": "sequence", // 순차적으로 작업을 실행
+            "dependsOn": [
+                "CMake Clean" // CMake 클린 작업을 수행
+            ]
+        }
+    ]
+}

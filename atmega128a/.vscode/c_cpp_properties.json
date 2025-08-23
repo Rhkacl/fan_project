@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Ubuntu AVR",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/user20/tools/avr8/include",
+                "/home/user20/tools/avr8/avr/include/avr"
+            ],
+            "defines": [
+                "F_CPU=16000000UL",
+                "__AVR_ATmega128A__"
+            ],
+            "compilerPath": "/home/user20/tools/avr8/bin/avr-gcc",
+            "cStandard": "c11",
+            "intelliSenseMode": "gcc-x64",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}
