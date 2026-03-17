@@ -97,7 +97,7 @@ PORTA, PORTB, PORTD, PORTG: 데이터 읽기/쓰기
 ### Servo Motor (Timer 1)
 * **TCCR1A/B**: `WGM13, WGM12, WGM11` (Mode 14, Fast PWM with ICR1 as TOP)
 * **ICR1**: `4999` (16MHz 클럭 기준 64분주 사용 시 50Hz 주기 생성)
-* **동작 원리**: `OCR1A` 값을 125~625 범위 내에서 조절하여 0.5ms~2.5ms의 Duty Cycle을 생성, 서보 각도를 제어합니다.
+* **동작 원리**: `OCR1A` 값을 125 ~ 625 범위 내에서 조절하여 0.5ms~2.5ms의 Duty Cycle을 생성, 서보 각도를 제어합니다.
 
 
 
